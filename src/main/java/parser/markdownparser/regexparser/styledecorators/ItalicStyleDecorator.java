@@ -10,10 +10,11 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class ItalicStyleDecorator implements IRegexStyleDecorator {
+    private static final Pattern PATTERN = Pattern.compile(RegexParserUtils.ITALIC_TEXT_REGEX);
+
     @Override
     public void decorate(String irisValue, Map<String, Element> elementsMap) {
-        Pattern pattern = Pattern.compile(RegexParserUtils.ITALIC_TEXT_REGEX);
-        Matcher matcher = pattern.matcher(irisValue);
+        Matcher matcher = PATTERN.matcher(irisValue);
         while (matcher.find()) {
             String literalWithNoise = irisValue.substring(matcher.start(), matcher.end());
             String literal = literalWithNoise.replaceAll("[*_]+", "");
