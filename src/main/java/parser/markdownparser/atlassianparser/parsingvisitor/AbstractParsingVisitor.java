@@ -16,7 +16,7 @@ public abstract class AbstractParsingVisitor extends AbstractVisitor {
 
     @Override
     public void visit(Text text) {
-        elements.add(new Element(text.getLiteral(), null));
+        elements.add(new Element(text.getLiteral()));
         visitChildren(text);
     }
 }

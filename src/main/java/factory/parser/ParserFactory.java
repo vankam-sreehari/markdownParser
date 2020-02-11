@@ -2,7 +2,7 @@ package factory.parser;
 
 import parser.markdownparser.atlassianparser.AtlassianParser;
 import parser.markdownparser.IParser;
-import parser.markdownparser.regexparser.RegexParser;
+import parser.markdownparser.regexparser.RegexMarkDownParser;
 
 public class ParserFactory {
 
@@ -11,7 +11,7 @@ public class ParserFactory {
             case ATLASSIAN:
                 return new AtlassianParser();
             case REGEX:
-                return new RegexParser();
+                return new RegexMarkDownParser();
             default:
                 return null;
         }

@@ -1,15 +1,13 @@
 package models;
 
-
-import com.flipkart.rome.datatypes.response.common.leaf.value.TextStyle;
+import java.util.List;
 
 public class Element {
     String literal;
-    TextStyle textStyle;
+    List<TextStyle> textStyle;
 
-    public Element(String literal, TextStyle textStyle) {
+    public Element(String literal) {
         this.literal = literal;
-        this.textStyle = textStyle;
     }
 
     public String getLiteral() {
@@ -20,11 +18,11 @@ public class Element {
         this.literal = literal;
     }
 
-    public TextStyle getTextStyle() {
+    public List<TextStyle> getTextStyle() {
         return textStyle;
     }
 
-    public void setTextStyle(TextStyle textStyle) {
+    public void setTextStyle(List<TextStyle> textStyle) {
         this.textStyle = textStyle;
     }
 }

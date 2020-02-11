@@ -1,24 +1,26 @@
 package parser.markdownparser.regexparser.styledecorators;
 
-import com.flipkart.rome.datatypes.response.common.enums.FontWeight;
-import com.flipkart.rome.datatypes.response.common.leaf.value.TextStyle;
 import models.Element;
-import parser.markdownparser.regexparser.utils.RegexParserUtils;
+import models.TextStyle;
+import parser.markdownparser.regexparser.utils.RegexMarkDownParserUtils;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class BoldStyleDecorator implements IRegexStyleDecorator {
-    private static final Pattern PATTERN = Pattern.compile(RegexParserUtils.BOLD_TEXT_REGEX);
+    private static final Pattern PATTERN = Pattern.compile(RegexMarkDownParserUtils.BOLD_TEXT_REGEX);
 
     @Override
     public void decorate(String irisValue, Map<String, Element> elementsMap) {
         Matcher matcher = PATTERN.matcher(irisValue);
         while (matcher.find()) {
             String literalWithNoise = irisValue.substring(matcher.start(), matcher.end());
-            String literal = literalWithNoise.replaceAll("[*_]+", "");
-            populateBoldTextStyle(elementsMap.get(literal));
+            String[] literal = literalWithNoise.split("[*_]+");
+            Arrays.stream(literal).filter(elementsMap::containsKey).forEach(v -> populateBoldTextStyle(elementsMap.get(v)));
         }
     }
 
@@ -28,9 +30,9 @@ public class BoldStyleDecorator implements IRegexStyleDecorator {
             return;
         }
         if (element.getTextStyle() == null) {
-            element.setTextStyle(new TextStyle());
+            element.setTextStyle(new ArrayList<>(Collections.singleton(TextStyle.BOLD)));
+        } else {
+            element.getTextStyle().add(TextStyle.BOLD);
         }
-
-        element.getTextStyle().setFontWeight(FontWeight.bold);
     }
 }

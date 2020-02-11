@@ -1,22 +1,21 @@
 package parser.markdownparser.regexparser;
 
-import com.flipkart.rome.datatypes.response.common.enums.FontStyle;
-import com.flipkart.rome.datatypes.response.common.enums.FontWeight;
 import junit.framework.TestCase;
 import models.Element;
+import models.TextStyle;
 import org.junit.Before;
 import org.junit.Test;
 import parser.markdownparser.IParser;
 
 import java.util.List;
 
-public class RegexParserTest extends TestCase {
+public class RegexMarkDownParserTest extends TestCase {
 
     private IParser parser;
 
     @Before
     public void setUp() {
-        parser = new RegexParser();
+        parser = new RegexMarkDownParser();
     }
 
     private void verifyNormalStyle(Element element, String expected) {
@@ -29,25 +28,23 @@ public class RegexParserTest extends TestCase {
 
         assertEquals(expected, element.getLiteral());
         assertNotNull(element.getTextStyle());
-        assertNull(element.getTextStyle().getFontStyle());
-        assertEquals(FontWeight.bold, element.getTextStyle().getFontWeight());
+        assertTrue(element.getTextStyle().contains(TextStyle.BOLD));
     }
 
     private void verifyItalicStyle(Element element, String expected) {
 
         assertEquals(expected, element.getLiteral());
         assertNotNull(element.getTextStyle());
-        assertNull(element.getTextStyle().getFontWeight());
-        assertEquals(FontStyle.italic, element.getTextStyle().getFontStyle());
+        assertTrue(element.getTextStyle().contains(TextStyle.ITALIC));
     }
 
     private void verifyBoldAndItalicStyle(Element element, String expected) {
 
         assertEquals(expected, element.getLiteral());
         assertNotNull(element.getTextStyle());
-        assertEquals(FontStyle.italic, element.getTextStyle().getFontStyle());
-        assertNotNull(element.getTextStyle());
-        assertEquals(FontWeight.bold, element.getTextStyle().getFontWeight());
+        assertTrue(element.getTextStyle().contains(TextStyle.BOLD));
+        assertTrue(element.getTextStyle().contains(TextStyle.ITALIC));
+
     }
 
     private List<Element> buildElements(String input) {
@@ -233,6 +230,7 @@ public class RegexParserTest extends TestCase {
         verifyBoldAndItalicStyle(elements.get(0), "1n469PUT7868");
     }
 
+    @Test
     public void testCase22() {
         String input = "**_1234ABCDdacb456_***";
         List<Element> elements = buildElements(input);
@@ -240,6 +238,7 @@ public class RegexParserTest extends TestCase {
         verifyBoldAndItalicStyle(elements.get(0), "1234ABCDdacb456");
     }
 
+    @Test
     public void testCase23() {
         String input = "You have saved**₹10000**on your order";
         List<Element> elements = buildElements(input);
@@ -247,6 +246,47 @@ public class RegexParserTest extends TestCase {
         verifyNormalStyle(elements.get(0), "You have saved");
         verifyBoldStyle(elements.get(1), "₹10000");
         verifyNormalStyle(elements.get(2), "on your order");
+    }
+
+    @Test
+    public void testCase24(){
+        String input = "_You have saved**₹10000**on your order_";
+        List<Element> elements = buildElements(input);
+        assertEquals(3, elements.size());
+        verifyItalicStyle(elements.get(0), "You have saved");
+        verifyBoldAndItalicStyle(elements.get(1), "₹10000");
+        verifyItalicStyle(elements.get(2), "on your order");
+    }
+
+    @Test
+    public void testCase25(){
+        String input = "**You have saved_₹10000_on your order**";
+        List<Element> elements = buildElements(input);
+        assertEquals(3, elements.size());
+        verifyBoldStyle(elements.get(0), "You have saved");
+        verifyBoldAndItalicStyle(elements.get(1), "₹10000");
+        verifyBoldStyle(elements.get(2), "on your order");
+    }
+
+    @Test
+    public void testCase26(){
+        String input = "**You have saved_*₹10000_on your order**";
+        List<Element> elements = buildElements(input);
+        assertEquals(3, elements.size());
+        verifyNormalStyle(elements.get(0), "You have saved");
+        verifyNormalStyle(elements.get(1), "₹10000");
+        verifyNormalStyle(elements.get(2), "on your order");
+    }
+
+
+    @Test
+    public void testCase27(){
+        String input = "आप इस आदेश पर**₹1000**बचाते हैं।";
+        List<Element> elements = buildElements(input);
+        assertEquals(3, elements.size());
+        verifyNormalStyle(elements.get(0), "आप इस आदेश पर");
+        verifyBoldStyle(elements.get(1), "₹1000");
+        verifyNormalStyle(elements.get(2), "बचाते हैं।");
     }
 
 }

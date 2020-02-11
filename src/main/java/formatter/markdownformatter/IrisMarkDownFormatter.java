@@ -17,15 +17,15 @@ public class IrisMarkDownFormatter {
     public static FormattedMessageValue getFormattedMessageValueFromString(String irisValue) {
         List<Element> elements = getElements(irisValue);
         FormattedMessageValue formattedMessageValue = new FormattedMessageValue();
-        List<FormattedMessageData> formattedMessageDataList = elements.stream()
-                .map(e -> FormattedMessageDataUtils.getFormattedRichTextData(e.getLiteral(), null, e.getTextStyle(), null))
-                .collect(Collectors.toList());
-        formattedMessageValue.setData(formattedMessageDataList);
+//        List<FormattedMessageData> formattedMessageDataList = elements.stream()
+//                .map(e -> FormattedMessageDataUtils.getFormattedRichTextData(e.getLiteral(), null, e.getTextStyle(), null))
+//                .collect(Collectors.toList());
+//        formattedMessageValue.setData(formattedMessageDataList);
         return formattedMessageValue;
     }
 
 
-    private static List<Element> getElements(String irisValue) {
+    public static List<Element> getElements(String irisValue) {
         IParser parser = getParser();
         return parser.parse(irisValue);
     }

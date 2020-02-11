@@ -18,7 +18,7 @@ public class AtlassianParsingVisitor extends AbstractParsingVisitor {
     @Override
     public void visit(Text text) {
         TextStyle textStyle = populateTextStyle(text);
-        elements.add(new Element(text.getLiteral(), textStyle));
+        elements.add(new Element(text.getLiteral()));
         visitChildren(text);
     }
 

@@ -1,24 +1,26 @@
 package parser.markdownparser.regexparser.styledecorators;
 
-import com.flipkart.rome.datatypes.response.common.enums.FontStyle;
-import com.flipkart.rome.datatypes.response.common.leaf.value.TextStyle;
 import models.Element;
-import parser.markdownparser.regexparser.utils.RegexParserUtils;
+import models.TextStyle;
+import parser.markdownparser.regexparser.utils.RegexMarkDownParserUtils;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class ItalicStyleDecorator implements IRegexStyleDecorator {
-    private static final Pattern PATTERN = Pattern.compile(RegexParserUtils.ITALIC_TEXT_REGEX);
+    private static final Pattern PATTERN = Pattern.compile(RegexMarkDownParserUtils.ITALIC_TEXT_REGEX);
 
     @Override
     public void decorate(String irisValue, Map<String, Element> elementsMap) {
         Matcher matcher = PATTERN.matcher(irisValue);
         while (matcher.find()) {
             String literalWithNoise = irisValue.substring(matcher.start(), matcher.end());
-            String literal = literalWithNoise.replaceAll("[*_]+", "");
-            populateItalicTextStyle(elementsMap.get(literal));
+            String[] literal = literalWithNoise.split("[*_]+");
+            Arrays.stream(literal).filter(elementsMap::containsKey).forEach(v -> populateItalicTextStyle(elementsMap.get(v)));
         }
     }
 
@@ -27,8 +29,9 @@ public class ItalicStyleDecorator implements IRegexStyleDecorator {
             return;
         }
         if (element.getTextStyle() == null) {
-            element.setTextStyle(new TextStyle());
+            element.setTextStyle(new ArrayList<>(Collections.singleton(TextStyle.ITALIC)));
+        } else {
+            element.getTextStyle().add(TextStyle.ITALIC);
         }
-        element.getTextStyle().setFontStyle(FontStyle.italic);
     }
 }

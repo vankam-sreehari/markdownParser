@@ -1,13 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/parser/markdownparser/regexparser/utils/RegexParserUtils.java" line="4" mnemonic="9" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/parser/markdownparser/regexparser/utils/RegexMarkDownParserUtils.java" line="4" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36942abd-9975-4ac3-948f-067df9b6c8f6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/formatter/FormatHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/formatter/markdownformatter/AbstractMarkDownFormatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/formatter/markdownformatter/IFormatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/formatter/markdownformatter/RegexMarkDownFormatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/models/TextStyle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/FormattedMessageDataFormatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/factory/parser/ParserFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/parser/ParserFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/formatter/markdownformatter/IrisMarkDownFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/formatter/markdownformatter/IrisMarkDownFormatter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Element.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Element.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/parser/markdownparser/atlassianparser/parsingvisitor/AbstractParsingVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/markdownparser/atlassianparser/parsingvisitor/AbstractParsingVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/parser/markdownparser/atlassianparser/parsingvisitor/AtlassianParsingVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/markdownparser/atlassianparser/parsingvisitor/AtlassianParsingVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/parser/markdownparser/regexparser/RegexParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/markdownparser/regexparser/RegexMarkDownParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/parser/markdownparser/regexparser/styledecorators/BoldStyleDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/markdownparser/regexparser/styledecorators/BoldStyleDecorator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/parser/markdownparser/regexparser/styledecorators/ItalicStyleDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/markdownparser/regexparser/styledecorators/ItalicStyleDecorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/parser/markdownparser/regexparser/utils/RegexParserUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/markdownparser/regexparser/utils/RegexMarkDownParserUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/parser/markdownparser/regexparser/RegexParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parser/markdownparser/regexparser/RegexMarkDownParserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/factory/parser/ParserFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/factory/parser/ParserFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/formatter/markdownformatter/IrisMarkDownFormatter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/formatter/markdownformatter/IrisMarkDownFormatter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/models/Element.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/models/Element.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/parser/markdownparser/atlassianparser/parsingvisitor/AbstractParsingVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/parser/markdownparser/atlassianparser/parsingvisitor/AbstractParsingVisitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/parser/markdownparser/atlassianparser/parsingvisitor/AtlassianParsingVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/parser/markdownparser/atlassianparser/parsingvisitor/AtlassianParsingVisitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/parser/markdownparser/regexparser/RegexParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/parser/markdownparser/regexparser/styledecorators/BoldStyleDecorator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/parser/markdownparser/regexparser/styledecorators/BoldStyleDecorator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/parser/markdownparser/regexparser/styledecorators/ItalicStyleDecorator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/parser/markdownparser/regexparser/styledecorators/ItalicStyleDecorator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/parser/markdownparser/regexparser/utils/RegexParserUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/parser/markdownparser/regexparser/RegexParserTest.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,24 +49,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/parser/markdownparser/regexparser/RegexParser.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/formatter/markdownformatter/IFormatter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="38" column="59" selection-start-line="38" selection-start-column="59" selection-end-line="38" selection-end-column="59" />
-              <folding>
-                <element signature="e#1633#1634#0" expanded="true" />
-                <element signature="e#1703#1704#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="85">
+              <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/parser/markdownparser/regexparser/styledecorators/BoldStyleDecorator.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/formatter/markdownformatter/RegexMarkDownFormatter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="323">
+              <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -49,24 +71,66 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/parser/markdownparser/regexparser/styledecorators/ItalicStyleDecorator.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/parser/markdownparser/regexparser/utils/RegexMarkDownParserUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="20" column="57" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
+            <state relative-caret-position="68">
+              <caret line="4" column="64" selection-start-line="4" selection-start-column="64" selection-end-line="4" selection-end-column="64" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/parser/markdownparser/regexparser/utils/RegexParserUtils.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/parser/markdownparser/regexparser/RegexMarkDownParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="63" selection-start-line="4" selection-start-column="63" selection-end-line="4" selection-end-column="63" />
+            <state relative-caret-position="-145">
+              <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/parser/markdownparser/regexparser/styledecorators/ItalicStyleDecorator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/parser/markdownparser/regexparser/RegexMarkDownParserTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2515">
+              <caret line="97" column="33" selection-start-line="97" selection-start-column="33" selection-end-line="97" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/parser/markdownparser/regexparser/styledecorators/BoldStyleDecorator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="369">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -84,18 +148,34 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/parser/markdownparser/regexparser/RegexParser.java" />
-        <option value="$PROJECT_DIR$/src/test/java/parser/markdownparser/regexparser/RegexParserTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/parser/markdownparser/regexparser/styledecorators/BoldStyleDecorator.java" />
         <option value="$PROJECT_DIR$/src/main/java/parser/markdownparser/regexparser/utils/RegexParserUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/test/AbstractFormatter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/formatter/markdownformatter/IrisMarkDownFormatter.java" />
+        <option value="$PROJECT_DIR$/src/test/java/parser/markdownparser/regexparser/RegexParserTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/Element.java" />
+        <option value="$PROJECT_DIR$/src/main/java/parser/markdownparser/regexparser/RegexParser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/parser/markdownparser/atlassianparser/parsingvisitor/AbstractParsingVisitor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/parser/markdownparser/atlassianparser/parsingvisitor/AtlassianParsingVisitor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/test/PS.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/TextStyle.java" />
+        <option value="$PROJECT_DIR$/src/main/java/test/FormattedMessageDataFormatter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/formatter/markdownformatter/IFormatter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/formatter/markdownformatter/RegexBasedFormatter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/formatter/FormatManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/test/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/formatter/markdownformatter/AbstractMarkDownFormatter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/formatter/FormatHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/parser/markdownparser/regexparser/utils/RegexMarkDownParserUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/parser/markdownparser/regexparser/styledecorators/BoldStyleDecorator.java" />
+        <option value="$PROJECT_DIR$/src/test/java/parser/markdownparser/regexparser/RegexMarkDownParserTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/parser/markdownparser/regexparser/RegexMarkDownParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/parser/markdownparser/regexparser/styledecorators/ItalicStyleDecorator.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="y" value="23" />
-    <option name="width" value="1680" />
-    <option name="height" value="973" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="834" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -115,7 +195,20 @@
             <path>
               <item name="rome-model-formatter" type="b2602c69:ProjectViewProjectNode" />
               <item name="IrisToModelFormatter" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rome-model-formatter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IrisToModelFormatter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rome-model-formatter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IrisToModelFormatter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -149,8 +242,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RegexParserTest">
-    <configuration name="RegexParserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.RegexMarkDownParserTest.testCase27">
+    <configuration name="RegexMarkDownParserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rome-model-formatter" />
       <extension name="coverage">
         <pattern>
@@ -159,13 +252,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="parser.markdownparser.regexparser" />
-      <option name="MAIN_CLASS_NAME" value="parser.markdownparser.regexparser.RegexParserTest" />
+      <option name="MAIN_CLASS_NAME" value="parser.markdownparser.regexparser.RegexMarkDownParserTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegexParserTest.testCase16" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RegexMarkDownParserTest.testCase24" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rome-model-formatter" />
       <extension name="coverage">
         <pattern>
@@ -174,14 +267,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="parser.markdownparser.regexparser" />
-      <option name="MAIN_CLASS_NAME" value="parser.markdownparser.regexparser.RegexParserTest" />
-      <option name="METHOD_NAME" value="testCase16" />
+      <option name="MAIN_CLASS_NAME" value="parser.markdownparser.regexparser.RegexMarkDownParserTest" />
+      <option name="METHOD_NAME" value="testCase24" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegexParserTest.testCase23" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RegexMarkDownParserTest.testCase25" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rome-model-formatter" />
       <extension name="coverage">
         <pattern>
@@ -190,14 +283,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="parser.markdownparser.regexparser" />
-      <option name="MAIN_CLASS_NAME" value="parser.markdownparser.regexparser.RegexParserTest" />
-      <option name="METHOD_NAME" value="testCase23" />
+      <option name="MAIN_CLASS_NAME" value="parser.markdownparser.regexparser.RegexMarkDownParserTest" />
+      <option name="METHOD_NAME" value="testCase25" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegexParserTest.testCase4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RegexMarkDownParserTest.testCase26" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rome-model-formatter" />
       <extension name="coverage">
         <pattern>
@@ -206,14 +299,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="parser.markdownparser.regexparser" />
-      <option name="MAIN_CLASS_NAME" value="parser.markdownparser.regexparser.RegexParserTest" />
-      <option name="METHOD_NAME" value="testCase4" />
+      <option name="MAIN_CLASS_NAME" value="parser.markdownparser.regexparser.RegexMarkDownParserTest" />
+      <option name="METHOD_NAME" value="testCase26" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegexParserTest.testCase7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RegexMarkDownParserTest.testCase27" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rome-model-formatter" />
       <extension name="coverage">
         <pattern>
@@ -222,8 +315,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="parser.markdownparser.regexparser" />
-      <option name="MAIN_CLASS_NAME" value="parser.markdownparser.regexparser.RegexParserTest" />
-      <option name="METHOD_NAME" value="testCase7" />
+      <option name="MAIN_CLASS_NAME" value="parser.markdownparser.regexparser.RegexMarkDownParserTest" />
+      <option name="METHOD_NAME" value="testCase27" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -231,11 +324,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RegexParserTest" />
-        <item itemvalue="JUnit.RegexParserTest.testCase16" />
-        <item itemvalue="JUnit.RegexParserTest.testCase7" />
-        <item itemvalue="JUnit.RegexParserTest.testCase23" />
-        <item itemvalue="JUnit.RegexParserTest.testCase4" />
+        <item itemvalue="JUnit.RegexMarkDownParserTest.testCase27" />
+        <item itemvalue="JUnit.RegexMarkDownParserTest.testCase26" />
+        <item itemvalue="JUnit.RegexMarkDownParserTest.testCase25" />
+        <item itemvalue="JUnit.RegexMarkDownParserTest" />
+        <item itemvalue="JUnit.RegexMarkDownParserTest.testCase24" />
       </list>
     </recent_temporary>
   </component>
@@ -249,57 +342,56 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1580900496714</updated>
-      <workItem from="1580900500090" duration="13542000" />
+      <workItem from="1580900500090" duration="33291000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RegexParserTest_testCase7 - 2020.02.05 at 23h 29m 45s.xml">
-      <configuration name="RegexParserTest.testCase7" configurationId="JUnit" />
+    <history-entry file="RegexMarkDownParserTest_testCase24 - 2020.02.11 at 23h 56m 29s.xml">
+      <configuration name="RegexMarkDownParserTest.testCase24" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RegexParserTest_testCase7 - 2020.02.05 at 23h 29m 53s.xml">
-      <configuration name="RegexParserTest.testCase7" configurationId="JUnit" />
+    <history-entry file="RegexMarkDownParserTest_testCase24 - 2020.02.11 at 23h 56m 40s.xml">
+      <configuration name="RegexMarkDownParserTest.testCase24" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RegexParserTest - 2020.02.05 at 23h 31m 47s.xml">
-      <configuration name="RegexParserTest" configurationId="JUnit" />
+    <history-entry file="RegexMarkDownParserTest - 2020.02.11 at 23h 56m 47s.xml">
+      <configuration name="RegexMarkDownParserTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RegexParserTest_testCase7 - 2020.02.05 at 23h 34m 02s.xml">
-      <configuration name="RegexParserTest.testCase7" configurationId="JUnit" />
+    <history-entry file="RegexMarkDownParserTest_testCase25 - 2020.02.11 at 23h 58m 12s.xml">
+      <configuration name="RegexMarkDownParserTest.testCase25" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RegexParserTest_testCase7 - 2020.02.05 at 23h 38m 21s.xml">
-      <configuration name="RegexParserTest.testCase7" configurationId="JUnit" />
+    <history-entry file="RegexMarkDownParserTest_testCase25 - 2020.02.11 at 23h 58m 17s.xml">
+      <configuration name="RegexMarkDownParserTest.testCase25" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RegexParserTest_testCase7 - 2020.02.05 at 23h 38m 26s.xml">
-      <configuration name="RegexParserTest.testCase7" configurationId="JUnit" />
+    <history-entry file="RegexMarkDownParserTest_testCase26 - 2020.02.12 at 00h 08m 29s.xml">
+      <configuration name="RegexMarkDownParserTest.testCase26" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RegexParserTest - 2020.02.05 at 23h 38m 36s.xml">
-      <configuration name="RegexParserTest" configurationId="JUnit" />
+    <history-entry file="RegexMarkDownParserTest_testCase26 - 2020.02.12 at 00h 09m 37s.xml">
+      <configuration name="RegexMarkDownParserTest.testCase26" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RegexParserTest_testCase16 - 2020.02.05 at 23h 39m 46s.xml">
-      <configuration name="RegexParserTest.testCase16" configurationId="JUnit" />
+    <history-entry file="RegexMarkDownParserTest_testCase26 - 2020.02.12 at 00h 13m 49s.xml">
+      <configuration name="RegexMarkDownParserTest.testCase26" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RegexParserTest_testCase16 - 2020.02.05 at 23h 39m 50s.xml">
-      <configuration name="RegexParserTest.testCase16" configurationId="JUnit" />
+    <history-entry file="RegexMarkDownParserTest_testCase26 - 2020.02.12 at 00h 13m 53s.xml">
+      <configuration name="RegexMarkDownParserTest.testCase26" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RegexParserTest - 2020.02.05 at 23h 40m 00s.xml">
-      <configuration name="RegexParserTest" configurationId="JUnit" />
+    <history-entry file="RegexMarkDownParserTest_testCase27 - 2020.02.12 at 00h 16m 34s.xml">
+      <configuration name="RegexMarkDownParserTest.testCase27" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13542000" />
+    <option name="totallyTimeSpent" value="33291000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Image Layers" />
       <window_info id="Capture Tool" />
       <window_info id="UI Designer" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2899263" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.53485954" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.55046827" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -307,8 +399,8 @@
       <window_info anchor="bottom" id="Messages" weight="0.3298647" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.54318416" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.53381896" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.47970864" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.421436" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -331,49 +423,22 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/parser/markdownparser/regexparser/RegexParserTest.java</url>
-          <line>69</line>
-          <properties />
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/parser/markdownparser/regexparser/RegexParserTest.java</url>
-          <line>187</line>
-          <properties />
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/parser/markdownparser/regexparser/RegexParserTest.java</url>
-          <line>231</line>
-          <properties />
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/parser/markdownparser/regexparser/styledecorators/ItalicStyleDecorator.java</url>
-          <line>16</line>
-          <properties />
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/parser/markdownparser/regexparser/styledecorators/BoldStyleDecorator.java</url>
-          <line>16</line>
+          <line>18</line>
           <properties />
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/parser/markdownparser/regexparser/RegexParserTest.java</url>
-          <line>85</line>
-          <properties />
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/parser/markdownparser/regexparser/RegexParserTest.java</url>
-          <line>110</line>
-          <properties />
-          <option name="timeStamp" value="23" />
+          <option name="timeStamp" value="41" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>formatManager.format(&quot;I am a**bad**boy&quot;,formattedMessageDataFormatter)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/parser/markdownparser/atlassianparser/styledecorators/BoldStyleDecorator.java">
@@ -404,51 +469,231 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/parser/markdownparser/regexparser/RegexParserTest.java">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/lang/Class.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-330">
-          <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        <state relative-caret-position="2062">
+          <caret line="403" column="22" lean-forward="true" selection-start-line="403" selection-start-column="22" selection-end-line="403" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/formatter/markdownformatter/IrisMarkDownFormatter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/parser/markdownparser/atlassianparser/parsingvisitor/AtlassianParsingVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="20" column="50" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/parser/markdownparser/atlassianparser/parsingvisitor/AbstractParsingVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="18" column="50" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runner/JUnitCore.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="76" selection-start-line="76" selection-end-line="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/JUnit38ClassRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="155" selection-start-line="155" selection-end-line="155" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/lang/InstantiationException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="45" column="6" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-385">
+          <caret line="164" column="11" selection-start-line="164" selection-start-column="11" selection-end-line="164" selection-end-column="11" />
+          <folding>
+            <element signature="e#6283#6284#0" expanded="true" />
+            <element signature="e#6351#6352#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/lang/NullPointerException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="68" column="5" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
+          <folding>
+            <element signature="e#1616#1617#0" expanded="true" />
+            <element signature="e#1640#1641#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/Element.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+          <folding>
+            <element signature="e#151#152#0" expanded="true" />
+            <element signature="e#189#190#0" expanded="true" />
+            <element signature="e#223#224#0" expanded="true" />
+            <element signature="e#253#254#0" expanded="true" />
+            <element signature="e#382#383#0" expanded="true" />
+            <element signature="e#414#415#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/TextStyle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/flipkart/rome/models-rome/2.7.51.1-SNAPSHOT/models-rome-2.7.51.1-SNAPSHOT-sources.jar!/com/flipkart/rome/datatypes/response/common/leaf/value/product/FormattedRichTextData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/flipkart/rome/models-rome/2.7.51.1-SNAPSHOT/models-rome-2.7.51.1-SNAPSHOT-sources.jar!/com/flipkart/rome/datatypes/response/common/leaf/value/product/FormattedMessageData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/test/PS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/parser/markdownparser/regexparser/styledecorators/BoldStyleDecorator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/test/AbstractFormatter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="391">
+          <caret line="25" column="11" lean-forward="true" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/test/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/test/FormattedMessageDataFormatter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/formatter/markdownformatter/IFormatter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/formatter/FormatHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/formatter/markdownformatter/AbstractMarkDownFormatter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="21" lean-forward="true" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/parser/markdownparser/regexparser/styledecorators/BoldStyleDecorator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/parser/markdownparser/regexparser/RegexMarkDownParserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2515">
+          <caret line="97" column="33" selection-start-line="97" selection-start-column="33" selection-end-line="97" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/formatter/markdownformatter/RegexMarkDownFormatter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/parser/markdownparser/regexparser/RegexMarkDownParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-145">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/parser/markdownparser/regexparser/utils/RegexMarkDownParserUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="64" selection-start-line="4" selection-start-column="64" selection-end-line="4" selection-end-column="64" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/parser/markdownparser/regexparser/styledecorators/ItalicStyleDecorator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="20" column="57" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/parser/markdownparser/regexparser/utils/RegexParserUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="63" selection-start-line="4" selection-start-column="63" selection-end-line="4" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/parser/markdownparser/regexparser/RegexParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="38" column="59" selection-start-line="38" selection-start-column="59" selection-end-line="38" selection-end-column="59" />
-          <folding>
-            <element signature="e#1633#1634#0" expanded="true" />
-            <element signature="e#1703#1704#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="221">
+          <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
         </state>
       </provider>
     </entry>
