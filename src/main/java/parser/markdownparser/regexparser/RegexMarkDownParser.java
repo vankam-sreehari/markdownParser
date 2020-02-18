@@ -4,8 +4,9 @@ import factory.regex.styledecorator.RegexStyleDecoratorFactory;
 import models.Element;
 import parser.markdownparser.IParser;
 import parser.markdownparser.regexparser.styledecorators.IRegexStyleDecorator;
+import parser.markdownparser.regexparser.utils.RegexMarkDownParserUtils;
 
-import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -20,27 +21,29 @@ import java.util.stream.Collectors;
  */
 
 public class RegexMarkDownParser implements IParser {
-    private static final String SPLIT_DELIMITER = "[*_]+";
+    private static final String FORMATTING_NOISE = "[*_]+";
 
     @Override
     public List<Element> parse(String irisValue) {
-        List<Element> elements = getElemets(irisValue);
-        return elements;
+        return getElements(irisValue);
     }
 
-
-    private List<Element> getElemets(String irisValue) {
-        String[] messageUnits = irisValue.split(SPLIT_DELIMITER);
-        List<String> literals = Arrays.stream(messageUnits)
-                .filter(v -> v.length() > 0)
-                .collect(Collectors.toList());
-        Map<String, Element> units = literals.stream()
-                .collect(Collectors.toMap(v -> v, v -> new Element(v)));
+    private List<Element> getElements(String irisValue) {
+        List<String> messageUnits = RegexMarkDownParserUtils.getLiterals(irisValue);
+        Map<String, Element> units = new HashMap<>();
         List<IRegexStyleDecorator> decorators = getStyleDecorators();
-        decorators.forEach(decorator -> decorator.decorate(irisValue, units));
-        return literals.stream()
-                .map(units::get)
+        decorators.forEach(decorator -> decorator.decorate(messageUnits, units));
+        return messageUnits.stream()
+                .map(v -> v.replaceAll(FORMATTING_NOISE, ""))
+                .map(v -> getElement(units, v))
                 .collect(Collectors.toList());
+    }
+
+    private Element getElement(Map<String, Element> units, String literal) {
+        if (units.containsKey(literal)) {
+            return units.get(literal);
+        }
+        return new Element(literal);
     }
 
     private List<IRegexStyleDecorator> getStyleDecorators() {

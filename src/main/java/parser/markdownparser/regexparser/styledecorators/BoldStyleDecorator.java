@@ -4,35 +4,21 @@ import models.Element;
 import models.TextStyle;
 import parser.markdownparser.regexparser.utils.RegexMarkDownParserUtils;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
+import java.util.List;
 import java.util.Map;
 import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class BoldStyleDecorator implements IRegexStyleDecorator {
-    private static final Pattern PATTERN = Pattern.compile(RegexMarkDownParserUtils.BOLD_TEXT_REGEX);
 
     @Override
-    public void decorate(String irisValue, Map<String, Element> elementsMap) {
-        Matcher matcher = PATTERN.matcher(irisValue);
-        while (matcher.find()) {
-            String literalWithNoise = irisValue.substring(matcher.start(), matcher.end());
-            String[] literal = literalWithNoise.split("[*_]+");
-            Arrays.stream(literal).filter(elementsMap::containsKey).forEach(v -> populateBoldTextStyle(elementsMap.get(v)));
-        }
+    public void decorate(List<String> literals, Map<String, Element> elementsMap) {
+        literals.stream()
+                .filter(this::isBoldFormattingNeeded)
+                .forEach(v -> RegexMarkDownParserUtils.populateTextStyle(elementsMap, v, TextStyle.BOLD));
     }
 
-    private void populateBoldTextStyle(Element element) {
-
-        if (element == null) {
-            return;
-        }
-        if (element.getTextStyle() == null) {
-            element.setTextStyle(new ArrayList<>(Collections.singleton(TextStyle.BOLD)));
-        } else {
-            element.getTextStyle().add(TextStyle.BOLD);
-        }
+    private boolean isBoldFormattingNeeded(String input) {
+        Matcher matcher = RegexMarkDownParserUtils.Patterns.BOLD_PATTERN.matcher(input);
+        return matcher.find();
     }
 }

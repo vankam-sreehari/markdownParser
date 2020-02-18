@@ -7,5 +7,5 @@ import java.util.Map;
 import java.util.Set;
 
 public interface IRegexStyleDecorator {
-    void decorate(String irisValue, Map<String,Element> elementsMap);
+    void decorate(List<String> literals, Map<String, Element> elementsMap);
 }
